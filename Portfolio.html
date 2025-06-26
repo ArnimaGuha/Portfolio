@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<title>Portfolio-Arnima</title>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Arnima Guha's portfolio – Computer Science undergrad passionate about cybersecurity and web development.">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0F172A;
+}
+
+html {
+      scroll-behavior: smooth;
+    }
+
+.header {
+  overflow:visible ;
+  background-color: #3F8EFC;
+  padding: 20px 10px;
+  position: fixed;
+}
+
+.header a {
+  float: left;
+  color: #94A3B8;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+ 
+}
+
+.logo{
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 42.5%;
+  color: #94A3B8;
+  margin-right: 2cm;
+  font-size: 2.5rem;
+  font-weight: bold;  
+  color: #38BDF8;
+}
+
+.header a:hover {
+  color: #38BDF8;
+}
+
+.header-right {
+  float: right;
+  position: fixed;
+  margin-left: 70%;
+  background-color: #3F8EFC;
+}
+
+section {
+  margin-bottom: 1.2rem;
+  padding: 2rem;
+}
+.ptext{
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 40%;
+  color: #94A3B8;
+  padding-right: 3cm;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+.pop-text {
+  transition: all 0.5s ease;
+  transform: scale(1);
+}
+
+.pop-text.pop-active {
+  transform: scale(1.05);
+}
+
+
+.link{
+  text-align: left;
+  font-family: Arial Black;
+  color: #94A3B8;
+  text-decoration: none;
+}
+
+.link:hover{
+  text-align: left;
+  font-family: Arial Black;  
+  color:#38BDF8 ;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+.svg-container {
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+svg {
+  width: 100%;
+  height: auto;
+}
+
+svg text {
+  fill: none;
+  stroke: #3F8EFC;
+  stroke-width: 2px;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawText 8s ease forwards;
+  font-family:  'Poppins', sans-serif;
+  font-size: 60px; /* Adjust for long phrases */
+}
+
+@keyframes drawText {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+    @keyframes drawText {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+  
+  .navbar {
+      position: fixed;
+      top: 50%;
+      left: 2rem;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #94A3B8;
+      font-size: 1rem;
+      padding: 0.5rem 6rem;
+      border-radius: 0.4rem;
+      transition: all 0.3s ease;
+    }
+
+    .navbar a.active,
+    .navbar a:hover {
+      color: #3F8EFC;
+      padding: 0.5rem 10rem;
+      font-size: 1.2rem;
+    }
+    .nav-item {
+  position: relative;
+}
+
+.nav-link {
+  display: block;
+  text-decoration: none;
+  color: #94a3b8;
+  font-size: 1rem;
+  padding: 0.6rem 1rem;
+  border-radius: 0.4rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  width: 102px;
+  height: 2px;
+  background-color: #3f8efc;
+  transition: width 0.3s ease;
+  transform: translateY(-50%);
+}
+
+.nav-link:hover{
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+.nav-link.active {
+  color: #3f8efc;
+}
+
+.nav-link:hover::before {
+  width: 150px;
+}
+
+.nav-link.active::before {
+  width: 150px;
+  height: 2px;
+}
+
+
+</style>
+</head>
+<body>
+  
+<div class="svg-container">
+  <svg viewBox="0 0 800 200">
+    <text x="50%" y="50%" text-anchor="middle" dy=".35em">
+      Curious. Creative. Coding.
+    </text>
+  </svg>
+</div>
+
+
+  
+<nav class="navbar">
+  <div class="nav-item"><a href="#about" class="nav-link">About</a></div>
+  <div class="nav-item"><a href="#education" class="nav-link">Education</a></div>
+  <div class="nav-item"><a href="#skills" class="nav-link">Skills</a></div>
+  <div class="nav-item"><a href="#contact" class="nav-link">Contact</a></div>
+</nav>
+
+
+<div class="logo pop-text">Hi,</div>
+<section id="about" class="ptext pop-text">
+<p>I’m Arnima Guha, a Computer Science undergraduate at Christ University, currently in my 3rd semester with a major in Computer Science and a minor in AI/ML. I’m passionate about all things tech—especially cybersecurity, coding challenges, and front-end web development.
+<br>
+I love solving problems through code and constantly push myself to learn new technologies and explore different areas in the tech world. While I’m still building my portfolio, I’ve been actively developing my skills in HTML, CSS, JavaScript, and I’m always up for tackling real-world projects or collaborating on innovative ideas.
+<br>
+In the future, I see myself thriving as an ethical hacker, software developer, or Java developer, and I’m open to internships, freelance projects, and collaborative opportunities that help me grow and contribute meaningfully.
+
+Let’s connect and build something impactful!</p></section>
+
+<li><div section id="education" class="logo pop-text">Education</div></li>
+<ul>
+  <section id="education" class="ptext pop-text">
+  <ol type="1">
+  <li><p>Completed ICSE from Agrasain Balika Siksha Sadan with 94.6% in boards.</p></li>
+  <li><p>Completed ISC from Agrasain Balika Siksha Sadan with 91.2% in boards.</p></li>
+  <li><p>Currently studying BTech in Computer Science and Minors in AI/ML from Christ University.<br>(1st Semester GPA=3.62, 2nd Semester GPA=3.57)</p></li>
+  </ol>
+  </ul>
+</section>
+
+<li><div class="logo pop-text">Skills</div></li>
+<ul>
+  <section id="skills"  class="ptext pop-text">
+  <ol type="1">
+  <li><p>Web Development</p></li><ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+  <li><p>Languages</p></li><ul><li>Java</li><li>C</li><li>C++</li><li>Python</li></ul>
+  <li><p>Cyber Security & Ethical Hacking</p></li><ul><li>NMap</li><li>MetaSploit</li><li>Wireshark</li></ul>
+  </ol>
+  </ul>
+</section>
+<br><br><br>
+<li><div class="logo pop-text">Contact</div></li>
+<ul>
+  <section id="contact"  class="ptext pop-text">
+  <ol type="1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <a href="https://mail.google.com/mail/u/0/#inbox" class="link" target="_blank">
+  <p><i class="fas fa-envelope"></i> Email: arnimaguha@gmail.com</p></a>
+  <a href="https://www.linkedin.com/in/arnima-guha-6016a0218/" class="link" target="_blank">
+  <p><i class="fab fa-linkedin"></i> LinkedIn</p></a>
+  <p><a href="https://github.com/ArnimaGuha" class="link" target="_blank">
+    <i class="fab fa-github"></i> GitHub</a></p>
+  
+</section>
+  <br><br><br>
+<footer style="text-align: center; color: #94A3B8; padding: 2rem 0;">
+  © 2025 Arnima Guha | Portfolio
+</footer>
+
+ <script>
+    const letters = document.querySelectorAll('.welcome-text span');
+    letters.forEach((span, index) => {
+      span.style.setProperty('--i', index);
+    });
+  </script>
+  <script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    window.addEventListener("scroll", () => {
+      let currentSectionId = "";
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop - window.innerHeight / 2;
+        const sectionHeight = section.offsetHeight;
+        const scrollY = window.pageYOffset;
+
+        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+          currentSectionId = section.getAttribute("id");
+          console.log("Current section: ", currentSectionId);
+        }
+      });
+
+      navLinks.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === `#${currentSectionId}`) {
+          link.classList.add("active");
+        }
+      });
+    });
+  });
+</script>
+<script>
+  const popElements = document.querySelectorAll('.pop-text');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('pop-active');
+      } else {
+        entry.target.classList.remove('pop-active');
+      }
+    });
+  }, {
+    threshold: 0.5 // 50% in view
+  });
+
+  popElements.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
